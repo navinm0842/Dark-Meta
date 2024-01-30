@@ -5,7 +5,7 @@ from time import sleep
 from bs4 import BeautifulSoup
 import csv
 
-app=Application(backend='uia').start('C:\\Users\\Navin Prasath\\Desktop\\Tor Browser\\Browser\\firefox.exe')
+app=Application(backend='uia').start('C:\\Users\\USER_NAME\\Desktop\\Tor Browser\\Browser\\firefox.exe')
 app=Application(backend='uia').connect(title='Connect to Tor — Tor Browser',timeout=10)
 #app.ConnecttoTorTorBrowser.print_control_identifiers()
 connect = app.ConnecttoTorTorBrowser.child_window(title="Connect", auto_id="connectButton", control_type="Button")
